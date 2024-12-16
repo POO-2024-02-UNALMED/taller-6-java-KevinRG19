@@ -6,11 +6,12 @@ public class Camioneta extends Vehiculo{
     private Boolean volco;
     static ArrayList<Camioneta> listaCamionetas = new ArrayList<>();
 
-    public Camioneta(int puertas, String placa, int velocidadMaxima, String nombre, int precio, String traccion, int peso, Fabricante fabricante, Boolean volco) {
-        super(puertas, placa, 90, nombre, precio, "4X4", peso, fabricante);
+    public Camioneta (String placa, int puertas, String nombre, int precio, int peso, Fabricante fabricante, boolean volco){
+        super(placa, puertas, 90, nombre, precio, peso, "4X4", fabricante);
         this.volco = volco;
-        listaCamionetas.add(this);
+        Camioneta.listaCamionetas.add(this);
     }
+
 
     public Boolean isVolco() {
         return volco;

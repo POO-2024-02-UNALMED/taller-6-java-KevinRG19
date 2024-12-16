@@ -14,7 +14,7 @@ public class Vehiculo {
     static ArrayList<Pais> listaPaises = new ArrayList<>();
     static ArrayList<Fabricante> listaFabricantes = new ArrayList<>();
 
-    public Vehiculo(int puertas, String placa, int velocidadMaxima, String nombre, int precio, String traccion, int peso, Fabricante fabricante) {
+    public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso,String traccion, Fabricante fabricante) {
         this.puertas = puertas;
         this.placa = placa;
         this.velocidadMaxima = velocidadMaxima;

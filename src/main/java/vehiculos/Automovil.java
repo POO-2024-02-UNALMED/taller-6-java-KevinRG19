@@ -5,10 +5,10 @@ public class Automovil extends Vehiculo{
     private int puestos;
     static ArrayList<Automovil> listaAutomoviles = new ArrayList<>();
 
-    public Automovil(int puertas, String placa, int velocidadMaxima, String nombre, int precio, String traccion, int peso, Fabricante fabricante, int puestos ) {
-        super(4, placa, 100, nombre, precio, "FWD", peso, fabricante);
+    public Automovil(String placa, String nombre, int precio, int peso, Fabricante fabricante, int puestos) {
+        super(placa, 4, 100, nombre, precio, peso,"FWD", fabricante);
         this.puestos = puestos;
-        listaAutomoviles.add(this);
+        Automovil.listaAutomoviles.add(this);
     }
 
     public int getPuestos() {
