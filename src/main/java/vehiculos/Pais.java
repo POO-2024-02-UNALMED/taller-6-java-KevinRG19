@@ -9,7 +9,7 @@ public class Pais {
 
     }
 
-    public static Pais paisManVendedor() {
+    public static Pais paisMasVendedor() {
         Pais paisMasVendedor = null;
         int maxOcurrencias = 0;
 
